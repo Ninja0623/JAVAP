@@ -47,7 +47,7 @@ public class TODO {
         hm.put(TaskID,new Task(t));
         System.out.println("Task added successfully "+TaskID);
         TaskID++;
-        main(null);
+        
     }
 
     public static void ViewTask()
