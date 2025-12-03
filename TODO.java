@@ -35,7 +35,7 @@ public class TODO {
             case 2 -> ViewTask();
             case 3 -> Update();
             case 4 -> Del();
-            case 5 -> IsComplete();
+            case 5 -> IsCompleted();
             default-> {System.out.println("Invalid request");
             break;
         }}
@@ -43,9 +43,8 @@ public class TODO {
     }
     public static void add(){
         System.out.print("Enter Task : ");
-        String t = sc.nextLine();
+        String t = sc.next();
         hm.put(TaskID,new Task(t));
-    
         System.out.println("Task added successfully "+TaskID);
         TaskID++;
     }
@@ -83,7 +82,7 @@ public class TODO {
         }
     }
 
-    public static void IsComplete(){
+    public static void IsCompleted(){
         System.out.println("Mark the task which is completed");
         int ss = sc.nextInt();
         if(hm.get(ss)!=null){
