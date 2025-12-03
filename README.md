@@ -1,1 +1,1 @@
-Contains A TO-DO list written in java 
+This Repo contains A TO-DO list written in java 
